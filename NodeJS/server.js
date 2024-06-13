@@ -10,11 +10,12 @@ var mysql = require('mysql');
  
 // create a connection variable with the required details
 var con = mysql.createConnection({
-  host: "", // ip address of server running mysql
-  user: "", // user name to your mysql database
-  password: "", // corresponding password
-  database: "" // use the specified database
-});
+	host: "hare-sankaran-rv-1.cteoyuw2qfur.ap-southeast-1.rds.amazonaws.com", // ip address of server running mysql
+	user: "admin", // user name to your mysql database
+	password: "Password", // corresponding password
+	database: "db01" // use the specified database
+  });
+  
  
 // make to connection to the database.
 con.connect(function(err) {
